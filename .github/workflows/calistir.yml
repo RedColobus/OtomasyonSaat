@@ -1,10 +1,10 @@
 yaml
-name: BasitSaat
+name: Basit İş Çalıştır
 
 on:
-  workflow_dispatch:        # Elle çalıştırma butonu
+  workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *"     # Her gün 06:00 UTC (Türkiye saatiyle 09:00)
+    - cron: "0 6 * * *"
 
 jobs:
   calistir:
