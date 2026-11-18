@@ -1,5 +1,4 @@
-yaml
-name: Basit İş Çalıştır
+name: Basit Is Calistir
 
 on:
   workflow_dispatch:
@@ -18,5 +17,5 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Scripti çalıştır
+      - name: Scripti calistir
         run: python merhaba.py
