@@ -1,5 +1,5 @@
 yaml
-name: Basit İş Çalıştır
+name: BasitSaat
 
 on:
   workflow_dispatch:        # Elle çalıştırma butonu
