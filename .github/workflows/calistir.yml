@@ -1,0 +1,22 @@
+yaml
+name: Basit İş Çalıştır
+
+on:
+  workflow_dispatch:        # Elle çalıştırma butonu
+  schedule:
+    - cron: "0 6 * * *"     # Her gün 06:00 UTC (Türkiye saatiyle 09:00)
+
+jobs:
+  calistir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scripti çalıştır
+        run: python merhaba.py
